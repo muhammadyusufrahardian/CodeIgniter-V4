@@ -12,16 +12,19 @@
             <div class="card card-primary">
               <div class="card-header"><h4>Register</h4></div>
 
+
               <div class="card-body">
-                <form method="POST">
+                <form action="<?= base_url('user/regis') ?>"
+                methot="POST">
+
                   <div class="row">
                     <div class="form-group col-6">
-                      <label for="frist_name">First Name</label>
-                      <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus>
+                      <label for="firstname">First Name</label>
+                      <input id="firstname" type="text" class="form-control" name="firstname" autofocus>
                     </div>
                     <div class="form-group col-6">
-                      <label for="last_name">Last Name</label>
-                      <input id="last_name" type="text" class="form-control" name="last_name">
+                      <label for="lastname">Last Name</label>
+                      <input id="lastname" type="text" class="form-control" name="lastname">
                     </div>
                   </div>
 
@@ -42,8 +45,8 @@
                       </div>
                     </div>
                     <div class="form-group col-6">
-                      <label for="password2" class="d-block">Password Confirmation</label>
-                      <input id="password2" type="password" class="form-control" name="password-confirm">
+                      <label for="password" class="d-block">Password Confirmation</label>
+                      <input id="password" type="password" class="form-control" name="password-confirm">
                     </div>
                   </div>
 

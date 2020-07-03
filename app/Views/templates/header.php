@@ -16,3 +16,4 @@
   <link rel="stylesheet" href="<?= base_url('template')?>/assets/css/style.css">
   <link rel="stylesheet" href="<?= base_url('template')?>/assets/css/components.css">
 </head>
+<body background ="<?= base_url('template') ?> /assets/img/2.jpg">
