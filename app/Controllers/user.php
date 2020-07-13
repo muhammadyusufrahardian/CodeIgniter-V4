@@ -22,6 +22,13 @@ class user extends Controller
         ];
         echo view('templates/wrapper', $data);
     }
+   // public function User_view(){
+    //   $data =[
+    //        'title' => 'Form Menu',
+      //     'tampil' => 'User_view',
+     //  ];
+     //  echo view('Views/User_view/', $data);
+ //  }
 
     public function regis(){
         helper(['form', 'url', 'date']);
@@ -39,21 +46,43 @@ class user extends Controller
         ];
 
         $save = $userModel->insert($data);
-       
+        $session = session();
+        session()->setFlashdata('message', 'selamat registrasi berhasil');
         return redirect() -> to(base_url('user'));
     }
-    public function login(){
-
-        if($this->ada($_POST['email'],$_POST['password'])!=NULL) {
-
-            $session=session();
-            $session->set('email',$_POST['email']);
-            return $this->response->redirect(site_url('home'));
-        }else{
-            session()->setFlashdata('msg','Email/Password Salah!!!!');
-            return redirect()->to(site_url('user'));
-        }
-    }
-
-    
-}
+  //  public function save()
+  //  {
+  //      $model = new User_model();
+  //      $data = array(
+ //           'firstname'         => $this->request->getPost('firstname'),
+  //          'lastname'       => $this->request->getPost('lastname'),
+  //          'email'           => $this->request->getPost('email'),
+  //          'password'           => $this->request->getPost('password'),
+   //     );
+  //      $model->saveUser($data);
+  //      return redirect()->to(base_url('user')); 
+  //  }
+ 
+  //  public function update()
+ //   {
+   //     $model = new User_model();
+   //     $id = $this->request->getPost('firstname');
+   //     $data = array(
+   //         'firstname'        => $this->request->getPost('firstname'),
+  //          'lastname'       => $this->request->getPost('lastname'),
+  //          'email'          => $this->request->getPost('email'),
+  //          'password'          => $this->request->getPost('password'),
+  //      );
+  //      $model->updateUser($data, $id);
+  //      return redirect()->to(base_url('user')); 
+ //   }
+ 
+ //   public function delete()
+  //  {
+  //      $model = new User_model();
+  //      $id = $this->request->getPost('firstname');
+   //     $model->deleteUser($id);
+   //     return redirect()->to(base_url('user')); 
+  //  }
+ 
+ }

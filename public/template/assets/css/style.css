@@ -1994,7 +1994,7 @@ a.bb {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #666;
+  color: #3abaf4;
   text-align: center; }
 
 .font-weight-600 {
@@ -2009,7 +2009,7 @@ a.bb {
   .budget-price .budget-price-square {
     width: 15px;
     height: 3px;
-    background-color: #f9f9f9; }
+    background-color: #6fd6f0; }
   .budget-price .budget-price-label {
     font-size: 12px;
     font-weight: 600;
@@ -2058,7 +2058,7 @@ blockquote {
   padding: 20px;
   padding-left: 40px;
   font-style: oblique;
-  background-color: #f9f9f9;
+  background-color: #1be6d5;
   border-radius: 3px;
   position: relative;
   font-family: 'Time new Romans';
@@ -2075,7 +2075,7 @@ blockquote {
     margin-top: 10px; }
 
 .bg-whitesmoke {
-  background-color: #f7f9f9 !important; }
+  background-color: #7b79fd !important; }
 
 .ion {
   font-size: 15px; }
@@ -2342,7 +2342,7 @@ pre {
   .section .section-header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-    background-color: #fff;
+    background-color: rgb(39, 25, 233);
     border-radius: 3px;
     border: none;
     position: relative;
@@ -2361,7 +2361,7 @@ pre {
       margin-right: 15px; }
       .section .section-header .section-header-back .btn:hover {
         background-color: #6777ef;
-        color: #fff; }
+        color: rgb(29, 43, 175); }
     .section .section-header .section-header-button {
       margin-left: 20px; }
     .section .section-header .section-header-breadcrumb {
